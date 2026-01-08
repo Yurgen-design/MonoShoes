@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html class="dark" lang="de"><head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MonoShoes - Kasse</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec37",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102213",
+                        "surface-dark": "#19331e",
+                        "border-dark": "#234829",
+                        "text-secondary": "#92c99b"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+        .custom-radio:checked + div {
+            border-color: #13ec37;
+            background-color: rgba(19, 236, 55, 0.05);
+        }
+        .custom-radio:checked + div .radio-circle-inner {
+            background-color: #13ec37;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-white font-display overflow-x-hidden">
+<div class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/95 backdrop-blur-sm">
+    <div class="layout-container flex justify-center">
+        <div class="layout-content-container flex w-full max-w-[1200px] items-center justify-between px-6 py-4 lg:px-10 relative">
+            
+            <div class="flex items-center gap-4 text-white shrink-0">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-background-dark">
+                    <span class="material-symbols-outlined text-2xl font-bold">eco</span>
+                </div>
+                <a class="text-xl font-bold leading-tight tracking-tight hover:text-primary transition-colors" href="index.html">MonoShoes</a>
+            </div>
+
+            <nav class="hidden md:flex flex-1 justify-end gap-8 px-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-button" class="md:hidden text-white flex items-center justify-center p-2">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-background-dark border-b border-border-dark p-6 flex flex-col gap-4 md:hidden shadow-2xl">
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
+            </div>
+        </div>
+    </div>
+</div>
+<main class="flex-1 layout-container flex flex-col lg:flex-row max-w-[1280px] mx-auto w-full">
+<div class="flex-1 px-4 md:px-10 lg:px-20 py-8 lg:border-r border-surface-border">
+<div class="flex flex-wrap items-center gap-2 mb-8 text-sm">
+<a class="text-primary font-medium flex items-center gap-1 transition-colors hover:text-white" href="#">
+<span>Warenkorb</span>
+<span class="material-symbols-outlined text-sm">check</span>
+</a>
+<span class="material-symbols-outlined text-text-secondary text-sm">chevron_right</span>
+<span class="text-white font-bold">Informationen &amp; Versand</span>
+<span class="material-symbols-outlined text-text-secondary text-sm">chevron_right</span>
+<span class="text-text-secondary font-medium">Zahlung</span>
+</div>
+<section class="mb-10">
+<div class="flex justify-between items-center mb-4">
+<h3 class="text-white text-xl font-bold">Kontaktinformationen</h3>
+<a class="text-primary text-sm font-medium hover:underline" href="#">Anmelden</a>
+</div>
+<div class="space-y-4">
+<label class="block">
+<span class="text-text-secondary text-sm mb-1 block">E-Mail-Adresse</span>
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder:text-gray-600" placeholder="ihre@email.com" type="email"/>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded border-surface-border bg-surface-dark text-primary focus:ring-offset-background-dark focus:ring-primary h-4 w-4" type="checkbox"/>
+<span class="text-sm text-text-secondary group-hover:text-white transition-colors">Ich möchte Neuigkeiten und Angebote per E-Mail erhalten</span>
+</label>
+</div>
+</section>
+<section class="mb-10">
+<h3 class="text-white text-xl font-bold mb-4">Versandart</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<label class="cursor-pointer relative">
+<input checked="" class="custom-radio peer sr-only" name="shipping_method" type="radio"/>
+<div class="p-4 rounded-lg border border-surface-border bg-surface-dark hover:border-gray-500 transition-all h-full flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined">local_shipping</span>
+                                    DHL Standard
+                                </span>
+<div class="w-5 h-5 rounded-full border border-gray-500 flex items-center justify-center radio-circle">
+<div class="radio-circle-inner w-2.5 h-2.5 rounded-full bg-transparent transition-colors"></div>
+</div>
+</div>
+<p class="text-sm text-text-secondary">Lieferung an Ihre Wohnadresse.</p>
+<p class="text-white font-bold mt-2">Kostenlos</p>
+</div>
+</label>
+<label class="cursor-pointer relative">
+<input class="custom-radio peer sr-only" name="shipping_method" type="radio"/>
+<div class="p-4 rounded-lg border border-surface-border bg-surface-dark hover:border-gray-500 transition-all h-full flex flex-col justify-between">
+<div class="flex justify-between items-start mb-2">
+<span class="font-bold text-white flex items-center gap-2">
+<span class="material-symbols-outlined">package_2</span>
+                                    DHL Packstation
+                                </span>
+<div class="w-5 h-5 rounded-full border border-gray-500 flex items-center justify-center radio-circle">
+<div class="radio-circle-inner w-2.5 h-2.5 rounded-full bg-transparent transition-colors"></div>
+</div>
+</div>
+<p class="text-sm text-text-secondary">Abholung an einer Packstation in Ihrer Nähe.</p>
+<p class="text-white font-bold mt-2">€2.99</p>
+</div>
+</label>
+</div>
+</section>
+<section class="mb-10">
+<h3 class="text-white text-xl font-bold mb-4">Lieferadresse</h3>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<div class="md:col-span-2">
+<label class="block">
+<span class="text-text-secondary text-sm mb-1 block">Land/Region</span>
+<div class="relative">
+<select class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary appearance-none cursor-pointer">
+<option>Deutschland</option>
+<option>Österreich</option>
+<option>Schweiz</option>
+</select>
+<span class="material-symbols-outlined absolute right-4 top-1/2 -translate-y-1/2 pointer-events-none text-text-secondary">expand_more</span>
+</div>
+</label>
+</div>
+<label class="block">
+<span class="text-text-secondary text-sm mb-1 block">Vorname</span>
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" type="text"/>
+</label>
+<label class="block">
+<span class="text-text-secondary text-sm mb-1 block">Nachname</span>
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" type="text"/>
+</label>
+<div class="md:col-span-2">
+<label class="block">
+<span class="text-text-secondary text-sm mb-1 block">Adresse</span>
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all placeholder:text-gray-600" placeholder="Straße und Hausnummer" type="text"/>
+</label>
+</div>
+<div class="md:col-span-2">
+<label class="block">
+<span class="text-text-secondary text-sm mb-1 block">Wohnung, Suite, etc. (optional)</span>
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" type="text"/>
+</label>
+</div>
+<label class="block">
+<span class="text-text-secondary text-sm mb-1 block">Postleitzahl</span>
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" type="text"/>
+</label>
+<label class="block">
+<span class="text-text-secondary text-sm mb-1 block">Stadt</span>
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" type="text"/>
+</label>
+<label class="block md:col-span-2">
+<span class="text-text-secondary text-sm mb-1 block">Telefon (optional)</span>
+<div class="relative">
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg pl-10 px-4 py-3 text-white focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary transition-all" type="tel"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-text-secondary text-lg">call</span>
+</div>
+<p class="text-xs text-text-secondary mt-1">Nur für Lieferaktualisierungen.</p>
+</label>
+</div>
+</section>
+<section class="mb-10">
+<h3 class="text-white text-xl font-bold mb-4">Zahlung</h3>
+<p class="text-text-secondary text-sm mb-4">Alle Transaktionen sind sicher und verschlüsselt.</p>
+<div class="border border-surface-border rounded-lg overflow-hidden">
+<label class="relative block border-b border-surface-border last:border-0">
+<input class="peer sr-only" name="payment_method" type="radio"/>
+<div class="p-4 bg-surface-dark peer-checked:bg-[#1a3821] flex items-center justify-between cursor-pointer transition-colors">
+<span class="font-bold text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-blue-400">account_balance_wallet</span>
+                                PayPal
+                            </span>
+<div class="w-5 h-5 rounded-full border border-gray-500 peer-checked:border-primary flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</div>
+<div class="hidden peer-checked:block p-6 bg-[#112214] border-t border-surface-border text-center">
+<span class="material-symbols-outlined text-4xl text-text-secondary mb-2">open_in_new</span>
+<p class="text-sm text-text-secondary">Nach dem Klick auf "Jetzt bezahlen" werden Sie zu PayPal weitergeleitet, um Ihren Einkauf sicher abzuschließen.</p>
+</div>
+</label>
+<label class="relative block border-b border-surface-border last:border-0">
+<input class="peer sr-only" name="payment_method" type="radio"/>
+<div class="p-4 bg-surface-dark peer-checked:bg-[#1a3821] flex items-center justify-between cursor-pointer transition-colors">
+<span class="font-bold text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-pink-400">payments</span>
+                                Klarna
+                            </span>
+<div class="w-5 h-5 rounded-full border border-gray-500 peer-checked:border-primary flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</div>
+<div class="hidden peer-checked:block p-6 bg-[#112214] border-t border-surface-border text-center">
+<p class="text-sm text-text-secondary">Jetzt kaufen, später bezahlen mit Klarna. Keine Gebühren.</p>
+</div>
+</label>
+<label class="relative block border-b border-surface-border last:border-0">
+<input checked="" class="peer sr-only" name="payment_method" type="radio"/>
+<div class="p-4 bg-surface-dark peer-checked:bg-[#1a3821] flex items-center justify-between cursor-pointer transition-colors">
+<span class="font-bold text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-white">credit_card</span>
+                                Kreditkarte
+                            </span>
+<div class="w-5 h-5 rounded-full border border-gray-500 peer-checked:border-primary flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</div>
+<div class="hidden peer-checked:block p-4 bg-[#112214] border-t border-surface-border">
+<div class="grid grid-cols-2 gap-4">
+<input class="col-span-2 w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="Kartennummer" type="text"/>
+<input class="col-span-2 w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="Name auf der Karte" type="text"/>
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="Gültigkeit (MM/JJ)" type="text"/>
+<input class="w-full bg-surface-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:border-primary focus:outline-none" placeholder="Prüfziffer (CVV)" type="text"/>
+</div>
+</div>
+</label>
+<label class="relative block border-b border-surface-border last:border-0">
+<input class="peer sr-only" name="payment_method" type="radio"/>
+<div class="p-4 bg-surface-dark peer-checked:bg-[#1a3821] flex items-center justify-between cursor-pointer transition-colors">
+<span class="font-bold text-white flex items-center gap-3">
+<span class="material-symbols-outlined text-white">phone_iphone</span>
+                                Apple Pay
+                            </span>
+<div class="w-5 h-5 rounded-full border border-gray-500 peer-checked:border-primary flex items-center justify-center">
+<div class="w-2.5 h-2.5 rounded-full bg-primary opacity-0 peer-checked:opacity-100 transition-opacity"></div>
+</div>
+</div>
+</label>
+</div>
+</section>
+<div class="flex flex-col-reverse md:flex-row items-center justify-between gap-4 mt-8">
+<a class="text-primary text-sm font-medium hover:text-white transition-colors flex items-center gap-2" href="#">
+<span class="material-symbols-outlined text-base">arrow_back</span>
+                    Zurück zum Warenkorb
+                </a>
+<button class="w-full md:w-auto bg-primary hover:bg-[#10c92f] text-background-dark font-bold py-4 px-8 rounded-lg shadow-lg shadow-primary/20 transition-all flex items-center justify-center gap-2 text-base">
+                    Jetzt bezahlen
+                </button>
+</div>
+<p class="mt-8 text-xs text-text-secondary text-center">
+                Mit dem Klick auf "Jetzt bezahlen" stimmen Sie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu.
+            </p>
+</div>
+<div class="w-full lg:w-[450px] bg-surface-dark dark:bg-[#0c180e] p-6 md:p-10 border-l border-surface-border">
+<div class="lg:sticky lg:top-8">
+<h3 class="text-white text-lg font-bold mb-6">Bestellübersicht</h3>
+<div class="flex gap-4 mb-6 relative group">
+<div class="w-20 h-20 bg-white/5 rounded-lg flex items-center justify-center relative overflow-hidden border border-surface-border">
+<img alt="MonoShoe Universal" class="w-full h-full object-cover" data-alt="Minimalist grey sneaker shoe side profile on dark background" src="woman_shoes_1.jpg"/>
+<span class="absolute top-0 right-0 bg-primary/90 text-background-dark text-xs font-bold w-5 h-5 flex items-center justify-center rounded-bl-lg">1</span>
+</div>
+<div class="flex-1 flex flex-col justify-center">
+<div class="flex justify-between items-start">
+<h4 class="text-white font-bold leading-tight">MonoShoe Universal</h4>
+<span class="text-white font-bold">€99.90</span>
+</div>
+<p class="text-text-secondary text-sm mt-1">Größe: 42 (EU)</p>
+<p class="text-text-secondary text-sm">Farbe: Rot</p>
+</div>
+</div>
+<div class="flex gap-2 mb-8">
+<input class="flex-1 bg-background-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary placeholder:text-gray-500 text-sm" placeholder="Geschenkkarte oder Rabattcode" type="text"/>
+<button class="bg-white/10 hover:bg-white/20 text-white font-medium px-4 rounded-lg transition-colors border border-surface-border text-sm">Anwenden</button>
+</div>
+<div class="space-y-3 pb-6 border-b border-surface-border">
+<div class="flex justify-between text-sm">
+<span class="text-text-secondary">Zwischensumme</span>
+<span class="text-white font-medium">€99.90</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-text-secondary flex items-center gap-1">
+                            Versand
+                            <span class="material-symbols-outlined text-xs" title="Wird im nächsten Schritt berechnet">help</span>
+</span>
+<span class="text-text-secondary text-xs font-mono tracking-wide">WIRD IM NÄCHSTEN SCHRITT BERECHNET</span>
+</div>
+<div class="flex justify-between text-sm">
+<span class="text-text-secondary">Steuern (19% MwSt.)</span>
+<span class="text-white font-medium">€19.00</span>
+</div>
+</div>
+<div class="py-6 flex justify-between items-end">
+<span class="text-white text-lg font-bold">Gesamtsumme</span>
+<div class="text-right">
+<span class="text-text-secondary text-xs block mb-1">Inklusive €22.80 Steuern</span>
+<span class="text-3xl font-extrabold text-white tracking-tight">
+<span class="text-base font-medium align-top mr-1">EUR</span>€119.00
+                        </span>
+</div>
+</div>
+<div class="mt-4 pt-6 border-t border-surface-border/50 grid grid-cols-2 gap-4">
+<div class="flex items-center gap-2 opacity-70">
+<span class="material-symbols-outlined text-primary text-xl">recycling</span>
+<span class="text-xs text-text-secondary leading-tight">100% recycelte Verpackung</span>
+</div>
+<div class="flex items-center gap-2 opacity-70">
+<span class="material-symbols-outlined text-primary text-xl">forest</span>
+<span class="text-xs text-text-secondary leading-tight">Klimaneutraler Versand</span>
+</div>
+<div class="flex items-center gap-2 opacity-70">
+<span class="material-symbols-outlined text-primary text-xl">cruelty_free</span>
+<span class="text-xs text-text-secondary leading-tight">Vegan zertifizierte Materialien</span>
+</div>
+<div class="flex items-center gap-2 opacity-70">
+<span class="material-symbols-outlined text-primary text-xl">verified_user</span>
+<span class="text-xs text-text-secondary leading-tight">30 Tage Geld-zurück-Garantie</span>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="border-t border-border-dark bg-background-dark pt-16 pb-8 px-6 lg:px-10">
+<div class="mx-auto max-w-[1200px]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<span class="text-xl font-bold">MonoShoes</span>
+</div>
+<p class="text-sm text-gray-400">
+                        Wir kreieren die Schuhe der Zukunft und kümmern uns heute um den Planeten.
+                    </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-white font-bold mb-1">Shop</h4>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="man.html">Herren</a>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="woman.html">Damen</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-white font-bold mb-1">Über uns</h4>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="about.html">Unsere Geschichte</a>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="index.html">Kontakt</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold">Newsletter abonnieren</h4>
+<p class="text-sm text-gray-400">Erhalten Sie Updates zu neuen Kollektionen und Öko-Initiativen.</p>
+<form class="flex flex-col gap-2">
+<input class="h-10 w-full rounded-lg border border-border-dark bg-surface-dark px-3 text-sm text-white focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Ihre E-Mail" type="email"/>
+<button class="h-10 w-full rounded-lg bg-white px-4 text-sm font-bold text-background-dark hover:bg-gray-200 transition-colors">Abonnieren</button>
+</form>
+</div>
+</div>
+<div class="border-t border-border-dark pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-500">© 2026 MonoShoes. Alle Rechte vorbehalten.</p>
+<div class="flex gap-6">
+<a class="text-xs text-gray-500 hover:text-white transition-colors" href="Impressum.html">Impressum</a>
+<a class="text-xs text-gray-500 hover:text-white transition-colors" href="Datenschutz.html">Datenschutz</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html class="dark" lang="de"><head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>MonoShoes - Ein Paar für Alles</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Noto+Sans:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#13ec37",
+                        "background-light": "#f6f8f6",
+                        "background-dark": "#102213",
+                        "surface-dark": "#19331e",
+                        "border-dark": "#234829",
+                        "text-secondary": "#92c99b"
+                    },
+                    fontFamily: {
+                        "display": ["Manrope", "sans-serif"],
+                        "body": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: { "DEFAULT": "0.5rem", "lg": "0.75rem", "xl": "1rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>html { scroll-behavior: smooth; }::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #102213; 
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #234829; 
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #13ec37; 
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-white font-display overflow-x-hidden">
+<div class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/95 backdrop-blur-sm">
+    <div class="layout-container flex justify-center">
+        <div class="layout-content-container flex w-full max-w-[1200px] items-center justify-between px-6 py-4 lg:px-10 relative">
+            
+            <div class="flex items-center gap-4 text-white shrink-0">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-background-dark">
+                    <span class="material-symbols-outlined text-2xl font-bold">eco</span>
+                </div>
+                <a class="text-xl font-bold leading-tight tracking-tight hover:text-primary transition-colors" href="index.html">MonoShoes</a>
+            </div>
+
+            <nav class="hidden md:flex flex-1 justify-end gap-8 px-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-button" class="md:hidden text-white flex items-center justify-center p-2">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-background-dark border-b border-border-dark p-6 flex flex-col gap-4 md:hidden shadow-2xl">
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="relative w-full overflow-hidden min-h-[600px] flex items-center justify-center">
+<div class="absolute inset-0 z-0 bg-cover bg-center" data-alt="Modern red shoe floating on dark background showing motion and style" style="background-image: url('main.jpg');">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark via-background-dark/60 to-transparent"></div>
+</div>
+<div class="layout-container relative z-10 flex w-full max-w-[1200px] flex-col items-center px-6 lg:px-10 py-20 text-center">
+<div class="animate-fade-in-up">
+<h1 class="mb-4 text-5xl font-black leading-tight tracking-tight text-white md:text-7xl lg:text-8xl drop-shadow-lg">
+                    Ein Paar<br/><span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-green-300">für Alles</span>
+</h1>
+<h2 class="mx-auto mb-8 max-w-2xl text-lg font-normal text-gray-200 md:text-xl">
+                    Minimalismus. Komfort. Verantwortung.<br/>
+                    Das einzige Modell, das sich Ihrem Lebensrhythmus anpasst.
+                </h2>
+<div class="flex flex-col sm:flex-row gap-4 justify-center">
+<a href="#collection" class="flex h-12 min-w-[160px] items-center justify-center rounded-lg bg-primary px-6 text-base font-bold text-background-dark shadow-lg transition-all hover:bg-white hover:scale-105">
+                        Ihr Paar wählen
+</a>
+<button class="flex h-12 min-w-[160px] items-center justify-center rounded-lg border border-white/20 bg-white/5 px-6 text-base font-bold text-white backdrop-blur-sm transition-all hover:bg-white/10 hover:border-white/40">
+<span class="material-symbols-outlined mr-2">play_circle</span> Video ansehen
+                    </button>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full bg-background-dark py-16 px-6 lg:px-10" id="collection">
+<div class="mx-auto max-w-[1200px]">
+<h2 class="mb-10 text-center text-3xl font-bold text-white md:text-4xl">Wählen Sie Ihren Stil</h2>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<div class="group relative overflow-hidden rounded-xl bg-surface-dark border border-border-dark transition-all hover:border-primary/50 hover:shadow-[0_0_20px_rgba(19,236,55,0.15)]">
+<div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close up of men's minimalistic sneaker on urban pavement" style="background-image: url('man_shoes_4.jpg');">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-8 flex flex-col items-start">
+<h3 class="text-3xl font-bold text-white mb-2">Herrenkollektion</h3>
+<div class="flex w-full items-end justify-between">
+<p class="text-text-secondary text-lg">Für Ihn</p>
+<a href="man.html" class="flex h-10 items-center gap-2 rounded-lg bg-primary px-5 text-sm font-bold text-background-dark transition-transform hover:translate-x-1">
+                                Herren shoppen <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+<div class="group relative overflow-hidden rounded-xl bg-surface-dark border border-border-dark transition-all hover:border-primary/50 hover:shadow-[0_0_20px_rgba(19,236,55,0.15)]">
+<div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Stylish green sport shoe floating in air against dark backdrop" style="background-image: url('woman_shoes_4.jpg');">
+<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
+</div>
+<div class="absolute bottom-0 left-0 w-full p-8 flex flex-col items-start">
+<h3 class="text-3xl font-bold text-white mb-2">Damenkollektion</h3>
+<div class="flex w-full items-end justify-between">
+<p class="text-text-secondary text-lg">Für Sie</p>
+<a href="woman.html" class="flex h-10 items-center gap-2 rounded-lg bg-primary px-5 text-sm font-bold text-background-dark transition-transform hover:translate-x-1">
+                                Damen shoppen <span class="material-symbols-outlined text-sm">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full bg-surface-dark/30 py-20 px-6 lg:px-10 border-y border-border-dark" id="specs">
+<div class="mx-auto max-w-[1200px] flex flex-col lg:flex-row gap-12 items-start">
+<div class="lg:w-1/3">
+<h2 class="text-4xl font-black text-white mb-4 leading-tight">Warum wir?</h2>
+<p class="text-gray-400 text-lg leading-relaxed mb-6">
+                    Wir haben den Schuhherstellungsprozess neu überdacht, um Überflüssiges zu eliminieren. Was bleibt, ist das Wesentliche: Qualität, Gewissen und Ihr Komfort.
+                </p>
+<a class="inline-flex items-center text-primary font-bold hover:underline decoration-2 underline-offset-4" href="about.html">
+                    Mehr über die Technologie erfahren <span class="material-symbols-outlined ml-1 text-sm">arrow_outward</span>
+</a>
+</div>
+<div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="rounded-xl border border-border-dark bg-surface-dark p-6 transition-all hover:-translate-y-1 hover:border-primary/30">
+<div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-2xl">recycling</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-white">100% Öko-Materialien</h3>
+<p class="text-sm text-text-secondary leading-relaxed">
+                        Obermaterial aus recyceltem Meeresplastik, Sohle aus Naturkautschuk und Einlegesohlen aus Bio-Kork.
+                    </p>
+</div>
+<div class="rounded-xl border border-border-dark bg-surface-dark p-6 transition-all hover:-translate-y-1 hover:border-primary/30">
+<div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-2xl">public</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-white">Hergestellt in der EU</h3>
+<p class="text-sm text-text-secondary leading-relaxed">
+                        Ethische Produktion in einer Familienfabrik in Deutschland. Faire Löhne und minimaler CO2-Fußabdruck.
+                    </p>
+</div>
+<div class="rounded-xl border border-border-dark bg-surface-dark p-6 transition-all hover:-translate-y-1 hover:border-primary/30">
+<div class="mb-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+<span class="material-symbols-outlined text-2xl">favorite</span>
+</div>
+<h3 class="mb-2 text-lg font-bold text-white">Komfort 24/7</h3>
+<p class="text-sm text-text-secondary leading-relaxed">
+                        Adaptiver Memory-Schaum und atmungsaktive Struktur. Sie vergessen, dass Sie Schuhe tragen, selbst nach 12 Stunden auf den Beinen.
+                    </p>
+</div>
+</div>
+</div>
+</div>
+<div class="w-full bg-background-dark py-24 px-6 text-center" id="story">
+<div class="mx-auto max-w-4xl">
+<span class="material-symbols-outlined text-primary text-5xl mb-6 opacity-80">format_quote</span>
+<h2 class="text-3xl md:text-5xl font-bold leading-tight text-white mb-8">
+                "Wir glauben, dass Sie nicht 10 Paar Schuhe brauchen. <span class="text-primary">Sie brauchen ein, aber das perfekte.</span>"
+            </h2>
+<div class="w-24 h-1 bg-primary mx-auto rounded-full"></div>
+</div>
+</div>
+<div class="w-full bg-surface-dark/50 py-20 overflow-hidden" id="reviews">
+<div class="mx-auto max-w-[1200px] px-6 lg:px-10 mb-10 flex justify-between items-end">
+<div>
+<h2 class="text-3xl font-bold text-white mb-2">Mono Community</h2>
+<p class="text-text-secondary">#MonoShoes im echten Leben</p>
+</div>
+<a class="hidden md:flex items-center gap-2 text-sm font-bold text-primary hover:text-white transition-colors" href="#">
+<span class="material-symbols-outlined">photo_camera</span> Instagram ansehen
+            </a>
+</div>
+<div class="flex overflow-x-auto pb-8 gap-4 px-6 lg:px-10 scrollbar-hide snap-x snap-mandatory">
+<div class="min-w-[280px] w-[280px] md:min-w-[320px] snap-center rounded-xl bg-surface-dark border border-border-dark overflow-hidden flex-shrink-0">
+<div class="aspect-square bg-cover bg-center" data-alt="Person wearing mono shoes standing on a skateboard" style="background-image: url('woman_6.jpg');"></div>
+<div class="p-4">
+<div class="flex text-primary mb-2">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-sm text-gray-300 mb-3">"Die bequemsten Sneakers, die ich je hatte. Ich trage sie im Büro und zum Joggen."</p>
+<p class="text-xs font-bold text-white">@alex_skater</p>
+</div>
+</div>
+<div class="min-w-[280px] w-[280px] md:min-w-[320px] snap-center rounded-xl bg-surface-dark border border-border-dark overflow-hidden flex-shrink-0">
+<div class="aspect-square bg-cover bg-center" data-alt="Close up of white sneakers on grass" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-m_Q3RmPSPH55qytGorvhB-SbcRUZhd50DvxXv1NC-TAgSqi46zqoLcoGbLK6SOOOG8U85uhSolK7B09xx5zqtgQOVQhLke81pNIOpR0ewPmTxtg9zRM6tnaHDl_rTmJvNO80La3bW5joHl3oTw_Zi4mwUbtjow3OuJax1XSsp9anJ8iVFTo5jwqT0-E8iMeDV2ZCRuHqWYyeXgU91yHjBbB2kqNZrOtjRPo84GZex1W_YDaeDlWiwkLa9dwFaJ2cMthgMTRICg');"></div>
+<div class="p-4">
+<div class="flex text-primary mb-2">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-sm text-gray-300 mb-3">"Sehr leicht und atmungsaktiv. Ich bin froh, dass sie aus recycelten Materialien sind!"</p>
+<p class="text-xs font-bold text-white">@eco_maria</p>
+</div>
+</div>
+<div class="min-w-[280px] w-[280px] md:min-w-[320px] snap-center rounded-xl bg-surface-dark border border-border-dark overflow-hidden flex-shrink-0">
+<div class="aspect-square bg-cover bg-center" data-alt="Shoes on feet walking on a rocky mountain path" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDDG4Zr1xZ41SqX461skH_6t9Li7b6DDQJty93hiR3yjbOBu1ELarkvoyIr7HMaZMIj0ITt9F-aeNE7omXAoWfMnjga3e6NVlfT-B5oiZuD3uYvd5PYG0-BpuJnVTotT5QyWifBGxt0VENudnpcZj0pmKylmvkSW72uyjfW-M4jHYxrUhj0fDyap-QU-TgX4p3QhWvHvPiIanIXahfwZBIG52V8nz-kFlEqkA_lOqN3TcLVS4uw64PLtr-HihFZfj4utfVZTT8BIg');"></div>
+<div class="p-4">
+<div class="flex text-primary mb-2">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star_half</span>
+</div>
+<p class="text-sm text-gray-300 mb-3">"Habe sie in den Bergen getestet. Super Grip, keine müden Füße."</p>
+<p class="text-xs font-bold text-white">@travel_mike</p>
+</div>
+</div>
+<div class="min-w-[280px] w-[280px] md:min-w-[320px] snap-center rounded-xl bg-surface-dark border border-border-dark overflow-hidden flex-shrink-0">
+<div class="aspect-square bg-cover bg-center" data-alt="Person sitting on stairs tying shoelaces of mono shoes" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBY0tXdy6y8xaKpYsjB6kQiIWx9davsiqmhiflFg25WxK4CTWG20yhSGdU84S0_awXCSOcyDMe163W-BFuY79t0DwhYJdDBhui6hN1IGb54wvzjSU_zsVmotcdNwcKOUHjHop495gX0pa0LQaXrHXL_WmSW5C32vrCpMVNcXRLhIv9jUWNcciGR7zyrNdXvUBR6DRKVXtjF7Fd_Ps8RURyl5G4IJnhXngJexQEFYHAh2Bz6B7UMkGkog-vWSru4zc9Z9RIWKKFaBg');"></div>
+<div class="p-4">
+<div class="flex text-primary mb-2">
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+<span class="material-symbols-outlined text-sm">star</span>
+</div>
+<p class="text-sm text-gray-300 mb-3">"Stilvoller Minimalismus. Passen zu jedem Outfit."</p>
+<p class="text-xs font-bold text-white">@urban_style_ua</p>
+</div>
+</div>
+</div>
+</div>
+<footer class="border-t border-border-dark bg-background-dark pt-16 pb-8 px-6 lg:px-10">
+<div class="mx-auto max-w-[1200px]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<span class="text-xl font-bold">MonoShoes</span>
+</div>
+<p class="text-sm text-gray-400">
+                        Wir kreieren die Schuhe der Zukunft und kümmern uns heute um den Planeten.
+                    </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-white font-bold mb-1">Shop</h4>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="man.html">Herren</a>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="woman.html">Damen</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-white font-bold mb-1">Über uns</h4>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="about.html">Unsere Geschichte</a>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="index.html">Kontakt</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold">Newsletter abonnieren</h4>
+<p class="text-sm text-gray-400">Erhalten Sie Updates zu neuen Kollektionen und Öko-Initiativen.</p>
+<form class="flex flex-col gap-2">
+<input class="h-10 w-full rounded-lg border border-border-dark bg-surface-dark px-3 text-sm text-white focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Ihre E-Mail" type="email"/>
+<button class="h-10 w-full rounded-lg bg-white px-4 text-sm font-bold text-background-dark hover:bg-gray-200 transition-colors">Abonnieren</button>
+</form>
+</div>
+</div>
+<div class="border-t border-border-dark pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-500">© 2026 MonoShoes. Alle Rechte vorbehalten.</p>
+<div class="flex gap-6">
+<a class="text-xs text-gray-500 hover:text-white transition-colors" href="Impressum.html">Impressum</a>
+<a class="text-xs text-gray-500 hover:text-white transition-colors" href="Datenschutz.html">Datenschutz</a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>

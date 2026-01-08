@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="dark" lang="de"><head>
+<meta charset="utf-8"/>
+<meta name="robots" content="noindex, nofollow">
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Über uns &amp; Impressum</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&amp;family=Noto+Sans:wght@300..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+  tailwind.config = {
+    darkMode: "class",
+    theme: {
+      extend: {
+        colors: {
+          "primary": "#13ec37",
+          "background-light": "#f6f8f6",
+          "background-dark": "#102213",
+          "surface-dark": "#19331e",
+          "border-dark": "#234829",
+          "text-secondary": "#92c99b"
+        },
+        fontFamily: {
+          "display": ["Manrope", "sans-serif"],
+          "body": ["Noto Sans", "sans-serif"]
+        },
+        borderRadius: { 
+          "DEFAULT": "0.5rem", 
+          "lg": "0.75rem", 
+          "xl": "1rem", 
+          "full": "9999px" 
+        },
+      },
+    },
+  }
+</script>
+<style>
+  html { scroll-behavior: smooth; }
+</style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-white font-display overflow-x-hidden">
+<div class="sticky top-0 z-50 w-full border-b border-border-dark bg-background-dark/95 backdrop-blur-sm">
+    <div class="layout-container flex justify-center">
+        <div class="layout-content-container flex w-full max-w-[1200px] items-center justify-between px-6 py-4 lg:px-10 relative">
+            
+            <div class="flex items-center gap-4 text-white shrink-0">
+                <div class="flex h-8 w-8 items-center justify-center rounded-full bg-primary text-background-dark">
+                    <span class="material-symbols-outlined text-2xl font-bold">eco</span>
+                </div>
+                <a class="text-xl font-bold leading-tight tracking-tight hover:text-primary transition-colors" href="index.html">MonoShoes</a>
+            </div>
+
+            <nav class="hidden md:flex flex-1 justify-end gap-8 px-8">
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
+                <a class="text-sm font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button id="mobile-menu-button" class="md:hidden text-white flex items-center justify-center p-2">
+                    <span class="material-symbols-outlined text-3xl">menu</span>
+                </button>
+            </div>
+
+            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-background-dark border-b border-border-dark p-6 flex flex-col gap-4 md:hidden shadow-2xl">
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
+                <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="Geshihte" class="w-full py-12 sm:py-24 bg-background-light dark:bg-background-dark">
+    <div class="max-w-[1200px] mx-auto px-5 sm:px-10">
+        <div class="max-w-3xl mx-auto">
+            <div class="flex flex-col gap-10">
+                
+                <div class="border-l-4 border-primary pl-6">
+                    <h2 class="text-[#111418] dark:text-white text-3xl md:text-5xl font-black leading-tight">
+                        Impressum
+                    </h2>
+                </div>
+
+                <div class="flex flex-col gap-6 text-[#4b5563] dark:text-gray-300 text-lg leading-relaxed text-left">
+                    <p class="hover:text-white transition-colors duration-300">
+                        Angaben gemäß § 5 DDG: MonoShoes Muster Adresse
+                    </p>
+                    <p class="hover:text-white transition-colors duration-300">
+                        Vertreten durch: Alex und Marta
+                    </p>
+                    <p class="hover:text-white transition-colors duration-300">
+                        Kontakt: Telefon: 133443538 E-Mail: Muster@gmail.com
+                    </p>
+                    <p class="hover:text-white transition-colors duration-300">
+                        Umsatzsteuer-ID: Muster Umsatzsteuer-Identifikationsnummer gemäß § 27 a Umsatzsteuergesetz: Muster
+                    </p>
+                    <p class="hover:text-white transition-colors duration-300">
+                        Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV: Muster
+                    </p>
+                    <p class="hover:text-white transition-colors duration-300">
+                       EU-Streitschlichtung: Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung (OS) bereit: https://ec.europa.eu/consumers/odr/. Unsere E-Mail-Adresse finden Sie oben im Impressum.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="border-t border-border-dark bg-background-dark pt-16 pb-8 px-6 lg:px-10">
+<div class="mx-auto max-w-[1200px]">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+<div class="flex flex-col gap-4">
+<div class="flex items-center gap-2 text-white">
+<span class="material-symbols-outlined text-primary text-3xl">eco</span>
+<span class="text-xl font-bold">MonoShoes</span>
+</div>
+<p class="text-sm text-gray-400">
+                        Wir kreieren die Schuhe der Zukunft und kümmern uns heute um den Planeten.
+                    </p>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-white font-bold mb-1">Shop</h4>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="man.html">Herren</a>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="woman.html">Damen</a>
+</div>
+<div class="flex flex-col gap-3">
+<h4 class="text-white font-bold mb-1">Über uns</h4>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="about.html">Unsere Geschichte</a>
+<a class="text-sm text-gray-400 hover:text-primary transition-colors" href="index.html">Kontakt</a>
+</div>
+<div class="flex flex-col gap-4">
+<h4 class="text-white font-bold">Newsletter abonnieren</h4>
+<p class="text-sm text-gray-400">Erhalten Sie Updates zu neuen Kollektionen und Öko-Initiativen.</p>
+<form class="flex flex-col gap-2">
+<input class="h-10 w-full rounded-lg border border-border-dark bg-surface-dark px-3 text-sm text-white focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" placeholder="Ihre E-Mail" type="email"/>
+<button class="h-10 w-full rounded-lg bg-white px-4 text-sm font-bold text-background-dark hover:bg-gray-200 transition-colors">Abonnieren</button>
+</form>
+</div>
+</div>
+<div class="border-t border-border-dark pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+<p class="text-xs text-gray-500">© 2026 MonoShoes. Alle Rechte vorbehalten.</p>
+<div class="flex gap-6">
+<a class="text-xs text-gray-500 hover:text-white transition-colors" href="Impressum.html">Impressum</a>
+<a class="text-xs text-gray-500 hover:text-white transition-colors" href="Datenschutz.html">Datenschutz</a>
+</div>
+</div>
+</div>
+</footer>
+</div></body></html>
