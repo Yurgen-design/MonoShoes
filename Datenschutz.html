@@ -66,11 +66,12 @@
                 </button>
             </div>
 
-            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-background-dark border-b border-border-dark p-6 flex flex-col gap-4 md:hidden shadow-2xl">
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
+            <div id="mobile-menu" 
+     class="opacity-0 invisible -translate-y-4 pointer-events-none transition-all duration-300 ease-in-out absolute top-full left-0 w-full bg-background-dark border-b border-border-dark p-6 flex flex-col gap-4 md:hidden shadow-2xl z-50">
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
             </div>
         </div>
     </div>
@@ -164,4 +165,38 @@ Beschwerde bei der zuständigen Aufsichtsbehörde einzulegen.
 </div>
 </div>
 </footer>
-</div></body></html>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = menuButton.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        menuButton.addEventListener('click', () => {
+            const isOpened = mobileMenu.classList.toggle('opacity-0');
+            mobileMenu.classList.toggle('invisible');
+            mobileMenu.classList.toggle('-translate-y-4');
+            mobileMenu.classList.toggle('pointer-events-auto');
+            
+            if (!isOpened) {
+                body.classList.add('overflow-hidden');
+                menuIcon.textContent = 'close';
+            } else {
+                body.classList.remove('overflow-hidden');
+                menuIcon.textContent = 'menu';
+            }
+        });
+
+        const links = mobileMenu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-4');
+                mobileMenu.classList.remove('pointer-events-auto');
+                body.classList.remove('overflow-hidden');
+                menuIcon.textContent = 'menu';
+            });
+        });
+    });
+</script>
+</body></html>

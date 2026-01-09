@@ -70,12 +70,13 @@
                 </button>
             </div>
 
-            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-background-dark border-b border-border-dark p-6 flex flex-col gap-4 md:hidden shadow-2xl">
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
-            </div>
+            <div id="mobile-menu" 
+     class="opacity-0 invisible -translate-y-4 pointer-events-none transition-all duration-300 ease-in-out absolute top-full left-0 w-full bg-background-dark border-b border-border-dark p-6 flex flex-col gap-4 md:hidden shadow-2xl z-50">
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
+        </div>
         </div>
     </div>
 </div>
@@ -104,39 +105,42 @@
 </div>
 </div>
 <div class="w-full bg-background-dark py-16 px-6 lg:px-10" id="collection">
-<div class="mx-auto max-w-[1200px]">
-<h2 class="mb-10 text-center text-3xl font-bold text-white md:text-4xl">Wählen Sie Ihren Stil</h2>
-<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-<div class="group relative overflow-hidden rounded-xl bg-surface-dark border border-border-dark transition-all hover:border-primary/50 hover:shadow-[0_0_20px_rgba(19,236,55,0.15)]">
-<div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Close up of men's minimalistic sneaker on urban pavement" style="background-image: url('man_shoes_4.jpg');">
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
-</div>
-<div class="absolute bottom-0 left-0 w-full p-8 flex flex-col items-start">
-<h3 class="text-3xl font-bold text-white mb-2">Herrenkollektion</h3>
-<div class="flex w-full items-end justify-between">
-<p class="text-text-secondary text-lg">Für Ihn</p>
-<a href="man.html" class="flex h-10 items-center gap-2 rounded-lg bg-primary px-5 text-sm font-bold text-background-dark transition-transform hover:translate-x-1">
-                                Herren shoppen <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-<div class="group relative overflow-hidden rounded-xl bg-surface-dark border border-border-dark transition-all hover:border-primary/50 hover:shadow-[0_0_20px_rgba(19,236,55,0.15)]">
-<div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="Stylish green sport shoe floating in air against dark backdrop" style="background-image: url('woman_shoes_4.jpg');">
-<div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
-</div>
-<div class="absolute bottom-0 left-0 w-full p-8 flex flex-col items-start">
-<h3 class="text-3xl font-bold text-white mb-2">Damenkollektion</h3>
-<div class="flex w-full items-end justify-between">
-<p class="text-text-secondary text-lg">Für Sie</p>
-<a href="woman.html" class="flex h-10 items-center gap-2 rounded-lg bg-primary px-5 text-sm font-bold text-background-dark transition-transform hover:translate-x-1">
-                                Damen shoppen <span class="material-symbols-outlined text-sm">arrow_forward</span>
-</a>
-</div>
-</div>
-</div>
-</div>
-</div>
+    <div class="mx-auto max-w-[1200px]">
+        <h2 class="mb-10 text-center text-3xl font-bold text-white md:text-4xl">Wählen Sie Ihren Stil</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="group relative overflow-hidden rounded-xl bg-surface-dark border border-border-dark transition-all hover:border-primary/50 hover:shadow-[0_0_20px_rgba(19,236,55,0.15)]">
+                <div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('man_shoes_4.jpg');">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col items-start">
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-2 break-words">Herrenkollektion</h3>
+                    <div class="flex w-full items-center justify-between gap-2">
+                        <p class="text-text-secondary text-base md:text-lg">Für Ihn</p>
+                        <a href="man.html" class="flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-bold text-background-dark transition-transform hover:translate-x-1 whitespace-nowrap shrink-0">
+                            Herren <span class="hidden sm:inline">shoppen</span> <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="group relative overflow-hidden rounded-xl bg-surface-dark border border-border-dark transition-all hover:border-primary/50 hover:shadow-[0_0_20px_rgba(19,236,55,0.15)]">
+                <div class="aspect-[4/3] w-full bg-cover bg-center transition-transform duration-700 group-hover:scale-105" style="background-image: url('woman_shoes_4.jpg');">
+                    <div class="absolute inset-0 bg-gradient-to-t from-background-dark/90 via-transparent to-transparent"></div>
+                </div>
+                <div class="absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col items-start">
+                    <h3 class="text-2xl md:text-3xl font-bold text-white mb-2 break-words">Damenkollektion</h3>
+                    <div class="flex w-full items-center justify-between gap-2">
+                        <p class="text-text-secondary text-base md:text-lg">Für Sie</p>
+                        <a href="woman.html" class="flex h-11 items-center gap-2 rounded-lg bg-primary px-6 text-sm font-bold text-background-dark transition-transform hover:translate-x-1 whitespace-nowrap shrink-0">
+                            Damen <span class="hidden sm:inline">shoppen</span> <span class="material-symbols-outlined text-sm">arrow_forward</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
 </div>
 <div class="w-full bg-surface-dark/30 py-20 px-6 lg:px-10 border-y border-border-dark" id="specs">
 <div class="mx-auto max-w-[1200px] flex flex-col lg:flex-row gap-12 items-start">
@@ -298,4 +302,41 @@
 </div>
 </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = menuButton.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        menuButton.addEventListener('click', () => {
+            // 1. Перемикаємо видимість меню
+            const isOpened = mobileMenu.classList.toggle('opacity-0');
+            mobileMenu.classList.toggle('invisible');
+            mobileMenu.classList.toggle('-translate-y-4');
+            mobileMenu.classList.toggle('pointer-events-auto');
+            
+            // 2. Блокуємо/розблоковуємо скрол сторінки
+            // Якщо ми прибрали opacity-0 (тобто меню відкрилося), додаємо overflow-hidden
+            if (!isOpened) {
+                body.classList.add('overflow-hidden');
+                menuIcon.textContent = 'close';
+            } else {
+                body.classList.remove('overflow-hidden');
+                menuIcon.textContent = 'menu';
+            }
+        });
+
+        // Закриваємо меню та відновлюємо скрол при кліку на посилання
+        const links = mobileMenu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-4');
+                mobileMenu.classList.remove('pointer-events-auto');
+                body.classList.remove('overflow-hidden');
+                menuIcon.textContent = 'menu';
+            });
+        });
+    });
+</script>
 </body></html>

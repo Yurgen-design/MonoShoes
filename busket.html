@@ -65,17 +65,20 @@
                 </button>
             </div>
 
-            <div id="mobile-menu" class="hidden absolute top-full left-0 w-full bg-background-dark border-b border-border-dark p-6 flex flex-col gap-4 md:hidden shadow-2xl">
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
-                <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
+            <div id="mobile-menu" 
+     class="opacity-0 invisible -translate-y-4 pointer-events-none transition-all duration-300 ease-in-out absolute top-full left-0 w-full bg-background-dark border-b border-border-dark p-6 flex flex-col gap-4 md:hidden shadow-2xl z-50">
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="index.html">Home</a>
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="man.html">Herren</a>
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="woman.html">Damen</a>
+    <a class="text-lg font-medium hover:text-primary transition-colors" href="about.html">Über uns</a>
             </div>
         </div>
     </div>
 </div>
+
+
 <main class="flex-1 layout-container flex flex-col lg:flex-row max-w-[1280px] mx-auto w-full">
-<div class="flex-1 px-4 md:px-10 lg:px-20 py-8 lg:border-r border-surface-border">
+<div class="flex-1 px-4 md:px-10 lg:px-20 py-8 lg:border-r border-surface-border order-2 lg:order-1">
 <div class="flex flex-wrap items-center gap-2 mb-8 text-sm">
 <a class="text-primary font-medium flex items-center gap-1 transition-colors hover:text-white" href="#">
 <span>Warenkorb</span>
@@ -275,7 +278,7 @@
                 Mit dem Klick auf "Jetzt bezahlen" stimmen Sie unseren Nutzungsbedingungen und Datenschutzrichtlinien zu.
             </p>
 </div>
-<div class="w-full lg:w-[450px] bg-surface-dark dark:bg-[#0c180e] p-6 md:p-10 border-l border-surface-border">
+<div class="w-full lg:w-[450px] bg-surface-dark dark:bg-[#0c180e] p-6 md:p-10 border-b lg:border-l lg:border-b-0 border-surface-border order-1 lg:order-2">
 <div class="lg:sticky lg:top-8">
 <h3 class="text-white text-lg font-bold mb-6">Bestellübersicht</h3>
 <div class="flex gap-4 mb-6 relative group">
@@ -292,9 +295,17 @@
 <p class="text-text-secondary text-sm">Farbe: Rot</p>
 </div>
 </div>
-<div class="flex gap-2 mb-8">
-<input class="flex-1 bg-background-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary placeholder:text-gray-500 text-sm" placeholder="Geschenkkarte oder Rabattcode" type="text"/>
-<button class="bg-white/10 hover:bg-white/20 text-white font-medium px-4 rounded-lg transition-colors border border-surface-border text-sm">Anwenden</button>
+<div class="flex flex-col sm:flex-row gap-2 mb-8">
+    <input 
+        class="flex-1 bg-background-dark border border-surface-border rounded-lg px-4 py-3 text-white focus:outline-none focus:border-primary placeholder:text-gray-500 text-sm min-w-0" 
+        placeholder="Geschenkkarte oder Rabattcode" 
+        type="text"
+    />
+    <button 
+        class="bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-3 sm:py-0 rounded-lg transition-colors border border-surface-border text-sm whitespace-nowrap w-full sm:w-auto"
+    >
+        Anwenden
+    </button>
 </div>
 <div class="space-y-3 pb-6 border-b border-surface-border">
 <div class="flex justify-between text-sm">
@@ -343,6 +354,7 @@
 </div>
 </div>
 </main>
+
 <footer class="border-t border-border-dark bg-background-dark pt-16 pb-8 px-6 lg:px-10">
 <div class="mx-auto max-w-[1200px]">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
@@ -383,4 +395,37 @@
 </div>
 </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const menuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = menuButton.querySelector('.material-symbols-outlined');
+        const body = document.body;
+
+        menuButton.addEventListener('click', () => {
+            const isOpened = mobileMenu.classList.toggle('opacity-0');
+            mobileMenu.classList.toggle('invisible');
+            mobileMenu.classList.toggle('-translate-y-4');
+            mobileMenu.classList.toggle('pointer-events-auto');
+            
+            if (!isOpened) {
+                body.classList.add('overflow-hidden');
+                menuIcon.textContent = 'close';
+            } else {
+                body.classList.remove('overflow-hidden');
+                menuIcon.textContent = 'menu';
+            }
+        });
+
+        const links = mobileMenu.querySelectorAll('a');
+        links.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('opacity-0', 'invisible', '-translate-y-4');
+                mobileMenu.classList.remove('pointer-events-auto');
+                body.classList.remove('overflow-hidden');
+                menuIcon.textContent = 'menu';
+            });
+        });
+    });
+</script>
 </body></html>
