@@ -1,0 +1,38 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #102213;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #234829;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #13ec37;
+}
+
+details > summary {
+    list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+    display: none;
+}
+
+.custom-radio:checked + div {
+    border-color: #13ec37;
+    background-color: rgba(19, 236, 55, 0.05);
+}
+
+.custom-radio:checked + div .radio-circle-inner {
+    background-color: #13ec37;
+}
