@@ -52,5 +52,6 @@ Analyzed industry leaders like **Atoms**, **Vessi**, and **Thousand Fell** to im
 - UX trust signals (Certifications & Eco-labels).
 - Fast checkout flows.
 
+https://mono-shoes-koncept-yurii.netlify.app/
 ---
 *Created by Yurii Lavuta*
