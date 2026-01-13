@@ -6,7 +6,7 @@ Dies ist ein Webentwicklungsprojekt, das im Rahmen eines Webdesign-Kurses erstel
 
 ## Tech Stack
 - **Sprachen:** HTML5, CSS3 (Flexbox & Grid), JavaScript (Vanilla)
-- **Design-Prinzipien:** Basierend auf den Prinzipien von Don Norman ("The Design of Everyday Things") und Steve Krug ("Don't Make Me Think").
+- **Design-Prinzipien**
 
 ## Projektübersicht
 - **Marke:** MonoShoes
@@ -34,7 +34,7 @@ This is a web development project created as part of a Web Design course. The go
 
 ## Tech Stack
 - **Languages:** HTML5, CSS3 (Flexbox/Grid), JavaScript (Vanilla)
-- **Design Principles:** Inspired by Don Norman's "Design of Everyday Things" and Steve Krug's "Don't Make Me Think".
+- **Design Principles**
 
 ## Project Overview
 - **Brand:** MonoShoes
